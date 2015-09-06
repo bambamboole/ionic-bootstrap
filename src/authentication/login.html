@@ -1,0 +1,33 @@
+<ion-view>
+  <ion-header-bar class="bar-calm">
+    <div class="title">Videostore App</div>
+  </ion-header-bar>
+  <ion-content>
+    <img class="logo" src="/img/vslogo.png" alt="Videostore">
+    <form ng-submit="vm.login(vm.credentials)">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Email</span>
+          <input type="text" placeholder="max@mustermann.de" ng-model="vm.credentials.login">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Passwort</span>
+          <input type="password"  ng-model="vm.credentials.password">
+        </label>
+      </div>
+      <div class="padding">
+        <button type="submit" class="button button-block button-calm" ng-disabled="!vm.credentials.login || !vm.credentials.password || vm.loading === true">Login</button>
+        <div class="card padding" ng-if="vm.error !== null">Error: {{vm.error}}</div>
+      </div>
+    </form>
+    <div class="or-spacer">
+      <div class="mask"></div>
+      <h2><span>oder</span></h2>
+    </div>
+    <div class="padding">
+      <a href="" class="button button-block button-calm">Registrieren</a>
+
+    </div>
+
+  </ion-content>
+</ion-view>

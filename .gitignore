@@ -8,8 +8,10 @@ node_modules/
 # when use sass, do not commit css files
 /www/css/
 /www/lib/
-
+/www/js/
 # do not commit generated images
-/resources/android
+/resources/ios
 
 *~
+.idea
+.io-config.json

@@ -1,0 +1,35 @@
+.side-menu{
+  
+
+  img.logo{
+    margin: 30px auto;
+  }
+  h2 {
+    width: auto;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    line-height: 0.1em;
+    margin: 10px 30px 20px 30px;
+  }
+
+  h2 span {
+    background: #fff;
+    padding: 0 10px;
+    color: #ddd;
+    font-size: .7em;
+  }
+  .has-header{
+    top:150px;
+  }
+  div.divider{
+    width:auto;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 30px 20px 30px;
+  }
+  .list{
+    .item{
+      border:0;
+    }
+  }
+}

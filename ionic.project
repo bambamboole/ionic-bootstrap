@@ -1,6 +1,6 @@
 {
-  "name": "ionic-starter",
-  "app_id": "",
+  "name": "vsMobile",
+  "app_id": "5f9215e0",
   "gulpStartupTasks": [
     "sass",
     "watch"

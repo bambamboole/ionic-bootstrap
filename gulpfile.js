@@ -15,7 +15,7 @@ var paths = {
     templates: ['./src/**/*.html']
 };
 
-gulp.task('default', ['sass', 'coffee', 'templates']);
+gulp.task('default', ['sass', 'coffee', 'templates', 'watch']);
 
 gulp.task('sass', function (done) {
     gulp.src('./scss/ionic.app.scss')

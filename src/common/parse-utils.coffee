@@ -95,10 +95,10 @@ angular.module 'app'
       $http.post(parseUrl + '/users', {authData: authData}, parseHttpConfig).then (result) ->
         result.data
 
+
     passwordRecover = (email) ->
       $http.post(parseUrl + '/requestPasswordReset', {email: email}, parseHttpConfig).then ->
 # return nothing
-
 
     toGeoPoint = (lat, lon) ->
       {
@@ -120,6 +120,7 @@ angular.module 'app'
         return d.toISOString()
       throw 'Function toDate must be used with a timestamp or a Date object'
 
+  return
 
 
 
